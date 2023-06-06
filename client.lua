@@ -52,15 +52,12 @@ Citizen.CreateThread(function()
                                     ClearPedSecondaryTask(playerPed)
                                     DeleteObject(prop)
                                 end)
-                            end)
+                            end
                         end
                     end
-                else
-                    Citizen.Wait(1500)
                 end
             end
         end
-    end
 end)
 
 
