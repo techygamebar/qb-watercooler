@@ -1,18 +1,10 @@
-QBCore = nil
+local QBCore = exports['qb-core']:GetCoreObject()
 
  local waterCoolers = {-742198632}
 
 local IsAnimated = false
 
-Citizen.CreateThread(function() 
-    while true do
-        Citizen.Wait(1)
-        if QBCore == nil then
-            TriggerEvent("QBCore:GetObject", function(obj) QBCore = obj end)    
-            Citizen.Wait(200)
-        end
-    end
-end)
+   
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(5)
